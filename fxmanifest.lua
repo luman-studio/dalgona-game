@@ -3,6 +3,7 @@ games { 'gta5' }
 author 'Luman Studio'
 version '1.1.0'
 lua54 'yes'
+this_is_a_map 'yes'
 
 dependencies {
     'PolyZone',
@@ -70,10 +71,6 @@ files {
     'ui/*.mp3',
     'ui/*.wav',
 }
-
--- Props
-file 'stream/dalgona_candies.ytyp'
-data_file 'DLC_ITYP_REQUEST' 'stream/dalgona_candies.ytyp'
 
 -- Sounds
 file 'audio/data/dalgona_sounds.dat54.rel'

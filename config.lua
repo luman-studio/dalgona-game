@@ -439,7 +439,7 @@ Config.Cutscene = {
             waitTime = 0
         },
         {
-            position = vector3(2189.03, 3508.01, 2.10),
+            position = vector3(2188.81, 3502.22, 4.10),
             rotation = { pitch = 0.0, roll = 0.0, yaw = 0.0 },
             transitionTime = 0,
             waitTime = 0
