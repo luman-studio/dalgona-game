@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+  color: #c9d1d9;
+  height: 100vh;
+}
+body {
+  display: none;
+}
+#timer {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  margin-top: 10px;
+  transition: max-width 0.3s ease;
+}
+
+
+.container {
+  max-width: 300px;
+  padding: 3.5vh;
+}
+
+.highlight {
+  font-size: 1.5rem;
+}
+
+.players-icon, .players-count {
+  font-size: 1.5rem;
+}
+
+/* Responsive adjustments for larger screens */
+@media screen and (min-height: 768px) {
+  .container {
+    max-width: 300px;
+    padding: 3.5vh;
+  }
+
+  .highlight {
+    font-size: 1.5rem;
+  }
+
+  .players-icon, .players-count {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-height: 1024px) {
+  .container {
+    max-width: 400px;
+    padding: 4.5vh;
+  }
+
+  .highlight {
+    font-size: 1.55rem;
+  }
+
+
+  .players-icon, .players-count {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (min-height: 1440px) {
+  .container {
+    max-width: 500px;
+    padding: 3.5vh;
+  }
+
+  .highlight {
+    font-size: 2rem;
+  }
+
+  .players-icon, .players-count {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-height: 2160px) {
+  .container {
+    max-width: 600px;
+    padding: 4.5vh;
+  }
+
+  .highlight {
+    font-size: 2rem;
+  }
+
+  .players-icon, .players-count {
+    font-size: 3rem;
+  }
+}
+
+/* Rest of the existing CSS remains the same */
+.header {
+  text-align: center;
+}
+
+.timer-section {
+  margin-bottom: 15px;
+}
+
+.highlight {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  color: #ffcc00;
+  margin: 10px 0;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.players-icon {
+  color: #fff;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.players-count {
+  font-weight: bold;
+  color: #805799;
+  text-shadow: 1px 1px 3px #000;
+}

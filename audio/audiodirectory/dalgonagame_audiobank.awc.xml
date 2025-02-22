@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<AudioWaveContainer>
+  <Version value="1"/>
+  <ChunkIndices value="True"/>
+  <Streams>
+    <Item>
+      <Name>pistol_shot_a</Name>
+      <FileName>pistol_shot_a_left.wav</FileName>
+      <Chunks>
+        <Item>
+          <Type>peak</Type>
+        </Item>
+        <Item>
+          <Type>data</Type>
+        </Item>
+        <Item>
+          <Type>format</Type>
+          <Codec>ADPCM</Codec>
+          <Samples value="117504"/>
+          <SampleRate value="48000"/>
+          <Headroom value="-100"/>
+          <PlayBegin value="0"/>
+          <PlayEnd value="0"/>
+          <LoopBegin value="0"/>
+          <LoopEnd value="0"/>
+          <LoopPoint value="-1"/>
+          <Peak unk="0"/>
+        </Item>
+      </Chunks>
+    </Item>
+    <Item>
+      <Name>pistol_shot_b</Name>
+      <FileName>pistol_shot_b_left.wav</FileName>
+      <Chunks>
+        <Item>
+          <Type>peak</Type>
+        </Item>
+        <Item>
+          <Type>data</Type>
+        </Item>
+        <Item>
+          <Type>format</Type>
+          <Codec>ADPCM</Codec>
+          <Samples value="117504"/>
+          <SampleRate value="48000"/>
+          <Headroom value="-100"/>
+          <PlayBegin value="0"/>
+          <PlayEnd value="0"/>
+          <LoopBegin value="0"/>
+          <LoopEnd value="0"/>
+          <LoopPoint value="-1"/>
+          <Peak unk="0"/>
+        </Item>
+      </Chunks>
+    </Item>
+    <Item>
+      <Name>pistol_shot_c</Name>
+      <FileName>pistol_shot_c_left.wav</FileName>
+      <Chunks>
+        <Item>
+          <Type>peak</Type>
+        </Item>
+        <Item>
+          <Type>data</Type>
+        </Item>
+        <Item>
+          <Type>format</Type>
+          <Codec>ADPCM</Codec>
+          <Samples value="117504"/>
+          <SampleRate value="48000"/>
+          <Headroom value="-100"/>
+          <PlayBegin value="0"/>
+          <PlayEnd value="0"/>
+          <LoopBegin value="0"/>
+          <LoopEnd value="0"/>
+          <LoopPoint value="-1"/>
+          <Peak unk="0"/>
+        </Item>
+      </Chunks>
+    </Item>
+    <Item>
+      <Name>pistol_shot_d</Name>
+      <FileName>pistol_shot_d_left.wav</FileName>
+      <Chunks>
+        <Item>
+          <Type>peak</Type>
+        </Item>
+        <Item>
+          <Type>data</Type>
+        </Item>
+        <Item>
+          <Type>format</Type>
+          <Codec>ADPCM</Codec>
+          <Samples value="117504"/>
+          <SampleRate value="48000"/>
+          <Headroom value="-100"/>
+          <PlayBegin value="0"/>
+          <PlayEnd value="0"/>
+          <LoopBegin value="0"/>
+          <LoopEnd value="0"/>
+          <LoopPoint value="-1"/>
+          <Peak unk="0"/>
+        </Item>
+      </Chunks>
+    </Item>
+    <Item>
+      <Name>pistol_shot_e</Name>
+      <FileName>pistol_shot_e_left.wav</FileName>
+      <Chunks>
+        <Item>
+          <Type>peak</Type>
+        </Item>
+        <Item>
+          <Type>data</Type>
+        </Item>
+        <Item>
+          <Type>format</Type>
+          <Codec>ADPCM</Codec>
+          <Samples value="117504"/>
+          <SampleRate value="48000"/>
+          <Headroom value="-100"/>
+          <PlayBegin value="0"/>
+          <PlayEnd value="0"/>
+          <LoopBegin value="0"/>
+          <LoopEnd value="0"/>
+          <LoopPoint value="-1"/>
+          <Peak unk="0"/>
+        </Item>
+      </Chunks>
+    </Item>
+    <Item>
+      <Name>pistol_shot_f</Name>
+      <FileName>pistol_shot_f_left.wav</FileName>
+      <Chunks>
+        <Item>
+          <Type>peak</Type>
+        </Item>
+        <Item>
+          <Type>data</Type>
+        </Item>
+        <Item>
+          <Type>format</Type>
+          <Codec>ADPCM</Codec>
+          <Samples value="117504"/>
+          <SampleRate value="48000"/>
+          <Headroom value="-100"/>
+          <PlayBegin value="0"/>
+          <PlayEnd value="0"/>
+          <LoopBegin value="0"/>
+          <LoopEnd value="0"/>
+          <LoopPoint value="-1"/>
+          <Peak unk="0"/>
+        </Item>
+      </Chunks>
+    </Item>
+  </Streams>
+</AudioWaveContainer>

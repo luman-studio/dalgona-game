@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<Dat54>
+  <Version value="7314721"/>
+  <ContainerPaths>
+    <Item>audiodirectory\dalgonagame_audiobank</Item>
+  </ContainerPaths>
+  <Items>
+    <Item type="SimpleSound">
+      <Name>pistol_shot_a_sp</Name>
+      <Header>
+        <Flags value="0x00008004"/>
+        <Volume value="200"/>
+        <Category>scripted</Category>
+      </Header>
+      <ContainerName>audiodirectory/dalgonagame_audiobank</ContainerName>
+      <FileName>pistol_shot_a</FileName>
+      <WaveSlotNum value="0"/>
+    </Item>
+    <Item type="SimpleSound">
+      <Name>pistol_shot_b_sp</Name>
+      <Header>
+        <Flags value="0x00008004"/>
+        <Volume value="200"/>
+        <Category>scripted</Category>
+      </Header>
+      <ContainerName>audiodirectory/dalgonagame_audiobank</ContainerName>
+      <FileName>pistol_shot_b</FileName>
+      <WaveSlotNum value="0"/>
+    </Item>
+    <Item type="SimpleSound">
+      <Name>pistol_shot_c_sp</Name>
+      <Header>
+        <Flags value="0x00008004"/>
+        <Volume value="200"/>
+        <Category>scripted</Category>
+      </Header>
+      <ContainerName>audiodirectory/dalgonagame_audiobank</ContainerName>
+      <FileName>pistol_shot_c</FileName>
+      <WaveSlotNum value="0"/>
+    </Item>
+    <Item type="SimpleSound">
+      <Name>pistol_shot_d_sp</Name>
+      <Header>
+        <Flags value="0x00008004"/>
+        <Volume value="200"/>
+        <Category>scripted</Category>
+      </Header>
+      <ContainerName>audiodirectory/dalgonagame_audiobank</ContainerName>
+      <FileName>pistol_shot_d</FileName>
+      <WaveSlotNum value="0"/>
+    </Item>
+    <Item type="SimpleSound">
+      <Name>pistol_shot_e_sp</Name>
+      <Header>
+        <Flags value="0x00008004"/>
+        <Volume value="200"/>
+        <Category>scripted</Category>
+      </Header>
+      <ContainerName>audiodirectory/dalgonagame_audiobank</ContainerName>
+      <FileName>pistol_shot_e</FileName>
+      <WaveSlotNum value="0"/>
+    </Item>
+    <Item type="SimpleSound">
+      <Name>pistol_shot_f_sp</Name>
+      <Header>
+        <Flags value="0x00008004"/>
+        <Volume value="200"/>
+        <Category>scripted</Category>
+      </Header>
+      <ContainerName>audiodirectory/dalgonagame_audiobank</ContainerName>
+      <FileName>pistol_shot_f</FileName>
+      <WaveSlotNum value="0"/>
+    </Item>
+    <Item type="SoundSet">
+      <Name>dalgonagame_soundset</Name>
+      <Header>
+        <Flags value="0xAAAAAAAA"/>
+      </Header>
+      <SoundSets>
+        <Item>
+          <ScriptName>pistol_shot_a</ScriptName>
+          <ChildSound>pistol_shot_a_sp</ChildSound>
+        </Item>
+        <Item>
+          <ScriptName>pistol_shot_b</ScriptName>
+          <ChildSound>pistol_shot_b_sp</ChildSound>
+        </Item>
+        <Item>
+          <ScriptName>pistol_shot_c</ScriptName>
+          <ChildSound>pistol_shot_c_sp</ChildSound>
+        </Item>
+        <Item>
+          <ScriptName>pistol_shot_d</ScriptName>
+          <ChildSound>pistol_shot_d_sp</ChildSound>
+        </Item>
+        <Item>
+          <ScriptName>pistol_shot_e</ScriptName>
+          <ChildSound>pistol_shot_e_sp</ChildSound>
+        </Item>
+        <Item>
+          <ScriptName>pistol_shot_f</ScriptName>
+          <ChildSound>pistol_shot_f_sp</ChildSound>
+        </Item>
+      </SoundSets>
+    </Item>
+  </Items>
+</Dat54>
