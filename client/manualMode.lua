@@ -157,6 +157,10 @@ AddStateBagChangeHandler(STATEBAGS['dalgonaManualSucceed'], nil, function(bagNam
         return
     end
 
+    -- Wait for value set
+    local playerStateEntity = Player(GetPlayerServerId(playerId))
+    while playerStateEntity.state[STATEBAGS['dalgonaManualSucceed']] ~= value do Wait(0) end
+
     -- Draw indiciator above player's head
     local playerPed = GetPlayerPed(playerId)
     local hasSucceed = value
@@ -169,7 +173,7 @@ AddStateBagChangeHandler(STATEBAGS['dalgonaManualSucceed'], nil, function(bagNam
     while not HasStreamedTextureDictLoaded(textureDict) do
         Wait(0)
     end
-    while LocalPlayer.state[STATEBAGS['dalgonaManualSucceed']] ~= nil and GetGameTimer() < stopDrawAt and DoesEntityExist(playerPed) and not IsEntityDead(playerPed) do
+    while playerStateEntity.state[STATEBAGS['dalgonaManualSucceed']] ~= nil and GetGameTimer() < stopDrawAt and DoesEntityExist(playerPed) and not IsEntityDead(playerPed) do
         Wait(0)
         local coords = GetEntityCoords(playerPed)
         local scale = 0.5
