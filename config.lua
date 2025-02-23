@@ -506,6 +506,10 @@ Config.ManualMode = {
     },
 }
 
+-- Minigame complexity. Make value bellow twice larger if you want it easier to play.
+-- For example Config.MinigameDistanceCheck = 0.0070
+Config.MinigameComplexityCheck = 0.0035
+
 -------------------------
 -- Uncomment for tests --
 -------------------------

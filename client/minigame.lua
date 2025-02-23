@@ -284,7 +284,7 @@ local function gameLoop(pattern)
                         segment.start.x, segment.start.y,
                         segment.finish.x, segment.finish.y
                     )
-                    if distance < 0.0035 then
+                    if distance < Config.MinigameComplexityCheck then
                         clickedIntoSegment = true
                         if not segment.completed then
                             segment.completed = true
