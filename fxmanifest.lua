@@ -77,3 +77,7 @@ file 'audio/data/dalgona_sounds.dat54.rel'
 data_file 'AUDIO_SOUNDDATA' 'audio/data/dalgona_sounds.dat'
 file 'audio/audiodirectory/dalgonagame_audiobank.awc'
 data_file 'AUDIO_WAVEPACK' 'audio/audiodirectory'
+
+-- Prop
+file 'stream/props/dalgona_candies.ytyp'
+data_file 'DLC_ITYP_REQUEST' 'stream/props/dalgona_candies.ytyp'
