@@ -81,3 +81,8 @@ data_file 'AUDIO_WAVEPACK' 'audio/audiodirectory'
 -- Prop
 file 'stream/props/dalgona_candies.ytyp'
 data_file 'DLC_ITYP_REQUEST' 'stream/props/dalgona_candies.ytyp'
+
+escrow_ignore {
+    "**/*",
+     "*"
+}
