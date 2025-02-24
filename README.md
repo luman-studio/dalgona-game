@@ -40,7 +40,7 @@ Resource is highly configurable and has next features:
 <div style="display: flex; justify-content: center; gap: 10px;">
   <img src="showcase/lobby.png" alt="Description" width="30%" height="auto">
   <img src="showcase/mingle.png" alt="Description" width="30%" height="auto">
-  <img src="showcase/level5.png" alt="Description" width="30%" height="auto">
+  <img src="showcase/flatout.png" alt="Description" width="30%" height="auto">
 </div>
 
 <br><br>
