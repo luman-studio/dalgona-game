@@ -5,7 +5,7 @@
 This is a game where you need to cut a pattern in a candy using a needle, for a limited time. As a reward — a lot of money waiting for you. But if you lose, your life is at stake.
 
 <p align="center">
-  <img src="showcase/script.png" alt="Description" width="640" height="325">
+  <img src="showcase/script.png" alt="Description" width=100% height=50%>
 </p>
 
 ## [Showcase](https://www.youtube.com/watch?v=Bww0deh7Rbo)
@@ -27,13 +27,23 @@ Resource is highly configurable and has next features:
 - **Optimized**. CPU and Network Optimized. If you are not in game, the script takes less than 0.01 ms and a few requests sent over the network.
 - **Plug-and-play**. Standalone, ESX , QB and vRP frameworks are supported;
 
-# MLO / Support Our Work
+# MLO
 
 **MLO**. By default we included basic empty MLO for the script. However, you can use our more advanced and custom modelled location with attention to details such as props, lights, shadows! [BUY HERE](https://lumanstudio.tebex.io/package/6697609) and use coupon for 10% discount `OPEN_SOURCE_10PERC`. Additional customer support is provided for the MLO + Script via [Discord](https://discord.com/invite/peYBHeBSGb).
 
 <p align="center">
-  <img src="showcase/mlo.png" alt="Description" width="640" height="300">
+  <img src="showcase/mlo.png" alt="Description" width=100% height=50%>
 </p>
+
+### Support Our Works on [YouTube](https://www.youtube.com/@lumanstudio)
+
+<div style="display: flex; justify-content: center; gap: 10px;">
+  <img src="showcase/lobby.png" alt="Description" width="30%" height="auto">
+  <img src="showcase/mingle.png" alt="Description" width="30%" height="auto">
+  <img src="showcase/level5.png" alt="Description" width="30%" height="auto">
+</div>
+
+<br><br>
 
 # Installation
 
