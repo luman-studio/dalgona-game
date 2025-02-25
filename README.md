@@ -39,13 +39,13 @@ Resource is highly configurable and has next features:
 
 <div style="display: flex; justify-content: center; gap: 10px;">
   <a href="https://www.youtube.com/watch?v=-0ONN8Smzpg">
-    <img src="showcase/lobby.png" alt="Description">
+    <img src="showcase/lobby.png" alt="Description" width="30%" height="auto">
   </a>
   <a href="https://www.youtube.com/watch?v=Jm7sFVS7mDg">
-    <img src="showcase/mingle.png" alt="Description">
+    <img src="showcase/mingle.png" alt="Description" width="30%" height="auto">
   </a>
   <a href="https://www.youtube.com/watch?v=carrHu5LP0Y">
-    <img src="showcase/flatout.png" alt="Description">
+    <img src="showcase/flatout.png" alt="Description" width="30%" height="auto">
   </a>
 </div>
 
