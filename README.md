@@ -29,7 +29,7 @@ Resource is highly configurable and has next features:
 
 # MLO
 
-**MLO**. By default we included basic empty MLO for the script. However, you can use our more advanced and custom modelled location with attention to details such as props, lights, shadows! [BUY HERE](https://lumanstudio.tebex.io/package/6697609) and use coupon for 10% discount `OPEN_SOURCE_10PERC`. Additional customer support is provided for the MLO + Script via [Discord](https://discord.com/invite/peYBHeBSGb).
+**MLO**. By default we included basic empty MLO for the script. However, you can use our more advanced and custom modelled location with attention to details such as props, lights, shadows! [BUY HERE](https://lumanstudio.tebex.io/package/6697609) and use coupon for 10% discount `OPEN_SOURCE_10PERC`. Easy installation — just remove default MLO folder at `dalgona-game/stream/mlo`. Additional customer support is provided for the MLO + Script via [Discord](https://discord.com/invite/peYBHeBSGb).
 
 <p align="center">
   <img src="showcase/mlo.png" alt="Description" width=100% height=50%>
