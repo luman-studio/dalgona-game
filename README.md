@@ -60,7 +60,9 @@ Bellow you will find a simple installation inctructions.
 3. Update your `server.cfg` to include:
 
 ```
+ensure PolyZone
 ensure dalgona-game
+ensure dalgona-mlo
 ```
 4. For clothes, if you don't have FiveM subscription, add this into `server.cfg`:
 ```
