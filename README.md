@@ -86,7 +86,7 @@ In `fxmanifest.lua`, remove the `--` before `@vrp/lib/utils.lua`.
 You can open Issue here on the Github with critical errors if any appears. For new features proposals feel free to join Luman Studio's Discord and share your idea there.
 
 Luman Studio also provide **paid** on-demand support on [Discord](https://discord.com/invite/peYBHeBSGb).
-For those who bought [MLO](https://lumanstudio.tebex.io/package/6697609) — support is for free.
+For those who bought [MLO](https://lumanstudio.tebex.io/package/6695104) — support is for free.
 
 # Our Tebex
 
