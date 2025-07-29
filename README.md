@@ -29,7 +29,7 @@ Resource is highly configurable and has next features:
 
 # MLO
 
-**MLO**. By default we included basic empty MLO for the script ([DOWNLOAD MLO HERE](https://github.com/luman-studio/dalgona-mlo-free)). However, you can use our more advanced and custom modelled location with attention to details such as props, lights, shadows! [BUY HERE](https://lumanstudio.tebex.io/package/6697609) and use coupon for 10% discount `OPEN_SOURCE_10PERC`. Easy installation — just remove default MLO folder at `dalgona-game/stream/mlo`. Additional customer support is provided for the MLO + Script via [Discord](https://discord.com/invite/peYBHeBSGb).
+**MLO**. By default we included basic empty MLO for the script ([DOWNLOAD MLO HERE](https://github.com/luman-studio/dalgona-mlo-free)). However, you can use our more advanced and custom modelled location with attention to details such as props, lights, shadows! [BUY HERE](https://lumanstudio.tebex.io/package/6695104) and use coupon for 10% discount `OPEN_SOURCE_10PERC`. Easy installation — just remove default MLO folder at `dalgona-game/stream/mlo`. Additional customer support is provided for the MLO + Script via [Discord](https://discord.com/invite/peYBHeBSGb).
 
 <p align="center">
   <img src="showcase/mlo.png" alt="Description" width=100% height=50%>
@@ -57,7 +57,7 @@ Bellow you will find a simple installation inctructions.
 
 1. Extract `luman-bridge` into yoyr `resources` folder [DOWNLOAD](https://github.com/luman-studio/luman-bridge)
 2. Extract `dalgona-game` into your `resources` folder
-3. Extract `dalgona-mlo` into your `resources` folder ( [DOWNLOAD MLO HERE](https://github.com/luman-studio/dalgona-mlo-free) / [BUY HERE](https://lumanstudio.tebex.io/package/6697609) )
+3. Extract `dalgona-mlo` into your `resources` folder ( [DOWNLOAD MLO HERE](https://github.com/luman-studio/dalgona-mlo-free) / [BUY HERE](https://lumanstudio.tebex.io/package/6695104) )
 4. Install/reinstall [PolyZone](https://github.com/mkafrin/PolyZone) (rename from `PolyZone-master` to `PolyZone`)
 5. Update your `server.cfg` to include:
 
@@ -87,7 +87,7 @@ In `luman-bridge/config.lua` specify framework name.
 You can open Issue here on the Github with critical errors if any appears. For new features proposals feel free to join Luman Studio's Discord and share your idea there.
 
 Luman Studio also provide **paid** on-demand support on [Discord](https://discord.com/invite/peYBHeBSGb).
-For those who bought [MLO](https://lumanstudio.tebex.io/package/6697609) — support is for free.
+For those who bought [MLO](https://lumanstudio.tebex.io/package/6695104) — support is for free.
 
 # Our Tebex
 
