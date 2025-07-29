@@ -23,10 +23,11 @@ function tryPushPlayerToLobby(playerId)
         return false
     end
 
-    if not Framework.takeMoney(playerId, Config.Fee) then
+    if not Framework.hasMoney(playerId, Config.Fee) then
         TriggerClientEvent(EVENTS['notifyNotEnoughMoney'], playerId)
         return false
     end
+    Framework.takeMoney(playerId, Config.Fee)
     totalReward = totalReward + Config.Fee
     
 

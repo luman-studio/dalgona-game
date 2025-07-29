@@ -13,15 +13,24 @@ function getRewardPerPlayer()
     return rewardPerPlayer
 end
 
+function showWinnerMessage(toWhomId, winnerId, rewardAmount)
+    local winnerName = Framework.getCharacterName(winnerId)
+    TriggerClientEvent('chat:addMessage', toWhomId, {
+        color = { 255, 0, 0},
+        multiline = true,
+        args = {Config.GameName, _U("player_%s_won_%s", winnerName, rewardAmount)}
+    })
+end
+
 function giveRewardToPlayer(playerId, reward)
     Framework.giveMoney(playerId, reward)
     -- Show winner message to all players
     if Config.ShowWinnerMessageGlobally then
-        Framework.showWinnerMessage(-1, playerId, reward)
+        showWinnerMessage(-1, playerId, reward)
     -- Or to participants only
     else
         for _,participant in ipairs(allParticipants) do
-            Framework.showWinnerMessage(participant, playerId, reward)
+            showWinnerMessage(participant, playerId, reward)
         end
     end
 end

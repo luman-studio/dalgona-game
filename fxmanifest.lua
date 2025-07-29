@@ -1,17 +1,17 @@
 fx_version 'cerulean'
 games { 'gta5' }
 author 'Luman Studio'
-version '1.1.1'
+version '1.1.2'
 lua54 'yes'
 this_is_a_map 'yes'
 
 dependencies {
     '/onesync',
+    'luman-bridge',
+    'PolyZone',
 }
 
 shared_scripts {
-    -- '@vrp/lib/utils.lua',
-    
     'shared/variables.lua',
     'shared/events.lua',
     'shared/statebags.lua',
@@ -20,7 +20,6 @@ shared_scripts {
     'shared/utils.lua',
 
     'config.lua',
-    'shared/framework.lua',
     'locale.lua',
     'locales/*.lua',
 }

@@ -3,7 +3,7 @@ Config.Locale = "en" -- Language "en"
 Config.GameName = "Dalgona Game"
 
 Config.MinimumParticipants = 1 -- How much players the game requires for start
-Config.Fee = 100 -- How much money cost to participate in game
+Config.Fee = 0 -- How much money cost to participate in game
 Config.StartPoint = vector3(2080.37, 3342.61, 46.86) -- Lobby point
 Config.StartPointSize = 7.5 -- radius
 Config.StartPointColor = {238, 169, 184, 125} -- red, green, blue, alpha
@@ -13,7 +13,7 @@ Config.StartPointBlip = {
     Color = 8,
     Scale = 0.75,
 }
-Config.StartPointEnabled = true -- you can use commands /sq-game-enable, /sq-game-disable
+Config.StartPointEnabled = true -- You can use command, see docs/COMMANDS.md
 Config.GameDuration = 120000 -- Game duration 120000 milliseconds
 Config.GameStartInterval = 10000 -- miliseconds
 

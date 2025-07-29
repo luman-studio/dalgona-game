@@ -25,7 +25,7 @@ Resource is highly configurable and has next features:
 - **Automatic mode**. Compete with other players in automatic mode where you have timer, money stakes and automatic elimination.
 - **Manual (RP mode)**. Use a command `/dalgona-game-manual` to trigger the minigame. When you loose/win - indicator is shown above your head.
 - **Optimized**. CPU and Network Optimized. If you are not in game, the script takes less than 0.01 ms and a few requests sent over the network.
-- **Plug-and-play**. Standalone, ESX , QB and vRP frameworks are supported;
+- **Plug-and-play**. Standalone, ESX, QB, Qbox and vRP frameworks are supported;
 
 # MLO
 
@@ -55,12 +55,14 @@ Resource is highly configurable and has next features:
 
 Bellow you will find a simple installation inctructions. 
 
-1. Extract `dalgona-game` into your `resources` folder.
-2. Extract `dalgona-mlo` into your `resources` folder ( [DOWNLOAD MLO HERE](https://github.com/luman-studio/dalgona-mlo-free) / [BUY HERE](https://lumanstudio.tebex.io/package/6697609) )
-2. Install/reinstall [PolyZone](https://github.com/mkafrin/PolyZone) (rename from `PolyZone-master` to `PolyZone`)
-3. Update your `server.cfg` to include:
+1. Extract `luman-bridge` into yoyr `resources` folder [DOWNLOAD](https://github.com/luman-studio/luman-bridge)
+2. Extract `dalgona-game` into your `resources` folder
+3. Extract `dalgona-mlo` into your `resources` folder ( [DOWNLOAD MLO HERE](https://github.com/luman-studio/dalgona-mlo-free) / [BUY HERE](https://lumanstudio.tebex.io/package/6697609) )
+4. Install/reinstall [PolyZone](https://github.com/mkafrin/PolyZone) (rename from `PolyZone-master` to `PolyZone`)
+5. Update your `server.cfg` to include:
 
 ```
+ensure luman-bridge
 ensure PolyZone
 ensure dalgona-game
 ensure dalgona-mlo
@@ -74,12 +76,11 @@ sv_maxclients 10
 
 **ESX/QB:**
 
-No manual setup is required — the framework is detected automatically. However, if you have renamed it, make sure to update the name in `shared/framework.lua` accordingly.
+No manual setup is required — the framework is detected automatically.
 
 **vRP:**
 
-In `fxmanifest.lua`, remove the `--` before `@vrp/lib/utils.lua`.
-
+In `luman-bridge/config.lua` specify framework name.
 
 # Support
 
