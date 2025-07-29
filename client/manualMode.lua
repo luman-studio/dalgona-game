@@ -179,7 +179,7 @@ AddStateBagChangeHandler(STATEBAGS['dalgonaManualSucceed'], nil, function(bagNam
         local scale = 0.5
         DrawMarker(
             9, -- type (6 is a vertical and 3D ring)
-            vector3(coords.x, coords.y, coords.z + 1.5),
+            vec3(coords.x, coords.y, coords.z + 1.5),
             0.0, 0.0, 0.0, -- direction (?)
             90.0, 90.0, 0.0, -- rotation (90 degrees because the right is really vertical)
             scale, scale, scale, -- scale

@@ -144,7 +144,7 @@ local function distanceToSegment(px, py, x1, y1, x2, y2)
 
     -- If line segment is basically a point
     if len_sq == 0 then 
-        return #(vector2(px - x1, py - y1))
+        return #(vec2(px - x1, py - y1))
     end
 
     local param = dot / len_sq
@@ -161,7 +161,7 @@ local function distanceToSegment(px, py, x1, y1, x2, y2)
         yy = y1 + param * D
     end
 
-    return #(vector2(px - xx, py - yy))
+    return #(vec2(px - xx, py - yy))
 end
 
 -- Draw cookie background

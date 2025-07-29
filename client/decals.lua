@@ -61,7 +61,7 @@ function createBloodDecalBehindPed(ped)
     
     -- Calculate position behind ped (adjust distance as needed)
     local behindDistance = -1.25
-    local behindOffset = vector3(
+    local behindOffset = vec3(
         -math.sin(math.rad(pedHeading)) * behindDistance,
         math.cos(math.rad(pedHeading)) * behindDistance,
         0.0
@@ -69,8 +69,8 @@ function createBloodDecalBehindPed(ped)
     local decalPos = pedPos + behindOffset
     
     -- Raycast down to find ground
-    local groundPos = decalPos + vector3(0.0, 0.0, 0.5) -- Start slightly above
-    local rayEnd = groundPos + vector3(0.0, 0.0, -5.0)   -- Ray 5 units down
+    local groundPos = decalPos + vec3(0.0, 0.0, 0.5) -- Start slightly above
+    local rayEnd = groundPos + vec3(0.0, 0.0, -5.0)   -- Ray 5 units down
     
     local ray = StartShapeTestRay(
         groundPos.x, groundPos.y, groundPos.z,

@@ -4,7 +4,7 @@ Config.GameName = "Dalgona Game"
 
 Config.MinimumParticipants = 1 -- How much players the game requires for start
 Config.Fee = 0 -- How much money cost to participate in game
-Config.StartPoint = vector3(2080.37, 3342.61, 46.86) -- Lobby point
+Config.StartPoint = vec3(2080.37, 3342.61, 46.86) -- Lobby point
 Config.StartPointSize = 7.5 -- radius
 Config.StartPointColor = {238, 169, 184, 125} -- red, green, blue, alpha
 Config.StartPointBlip = {
@@ -62,14 +62,14 @@ Config.SpawnCoords = {
     GameSuccess = { 
         -- Player won the game. You can use it for teleporting player to next level
         -- You can delete coordinates, if you don't want to teleport players on game over
-        vector3(2123.95, 3298.85, 56.55),
-        vector3(2120.95, 3298.85, 56.55),
+        vec3(2123.95, 3298.85, 56.55),
+        vec3(2120.95, 3298.85, 56.55),
     },
     GameFailed = { 
         -- Player failed the game. You can use it for teleporting player to some limbo or something :P
         -- You can delete coordinates, if you don't want to teleport players on game over
-        vector3(2065.04, 3285.5, 43.89),
-        vector3(2060.04, 3285.5, 43.89),
+        vec3(2065.04, 3285.5, 43.89),
+        vec3(2060.04, 3285.5, 43.89),
     },
     ParticipantsNPC = {
         vec3(2193.12646484375, 3506.857177734375, 0.79461407661437),
@@ -422,7 +422,7 @@ Config.GuardPeds = {"hc_gunman", "hc_driver", "s_m_y_swat_01"}
 -----------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------
 Config.ZoneCoords = {
-    GameCenter = vector3(2188.94, 3494.73, 0.79),
+    GameCenter = vec3(2188.94, 3494.73, 0.79),
     GameWidth = 34.0,
     GameLength = 34.0,
     GameHeading = 0.0,
@@ -433,13 +433,13 @@ Config.Cutscene = {
     Enabled = true, -- true/false - Set to false if you have crash or anticheat issue 
     Sequence = {
         {
-            position = vector3(2189.03, 3494.75, 2.10),
+            position = vec3(2189.03, 3494.75, 2.10),
             rotation = { pitch = 0.0, roll = 0.0, yaw = 180.0 },
             transitionTime = 5000,
             waitTime = 0
         },
         {
-            position = vector3(2188.81, 3502.22, 4.10),
+            position = vec3(2188.81, 3502.22, 4.10),
             rotation = { pitch = 0.0, roll = 0.0, yaw = 0.0 },
             transitionTime = 0,
             waitTime = 0
@@ -507,7 +507,7 @@ Config.ManualMode = {
 }
 
 -- Minigame complexity. Make value bellow twice larger if you want it easier to play.
--- For example Config.MinigameDistanceCheck = 0.0070
+-- For example Config.MinigameComplexityCheck = 0.0070
 Config.MinigameComplexityCheck = 0.0035
 
 -------------------------

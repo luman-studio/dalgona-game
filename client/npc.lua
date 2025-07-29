@@ -27,7 +27,7 @@ local function spawnParticipantsNPC()
         end
 
         local heading = math.random(0, 359) + 0.0
-        spawnCoords = spawnCoords + vector3(0.0, 0.0, -1.0) -- no offset
+        spawnCoords = spawnCoords + vec3(0.0, 0.0, -1.0) -- no offset
         local ped = CreatePed(0, modelHash, spawnCoords.x, spawnCoords.y, spawnCoords.z, heading, false, false)
         local timeoutAt = GetGameTimer() + 200
         while not DoesEntityExist(ped) and GetGameTimer() < timeoutAt do

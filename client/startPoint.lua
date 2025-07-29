@@ -99,10 +99,10 @@ local function createStartPoint()
             while not drawZone.destroyed and insideDrawMarkerPoint do
                 Wait(0)
                 local gameInfoText = ""
-                DrawIndicator(vector3(Config.StartPoint.x, Config.StartPoint.y, Config.StartPoint.z + 2.0), {255, 255, 255, 255})
+                DrawIndicator(vec3(Config.StartPoint.x, Config.StartPoint.y, Config.StartPoint.z + 2.0), {255, 255, 255, 255})
                 DrawMarker(
                     1, -- type (6 is a vertical and 3D ring)
-                    vector3(Config.StartPoint.x, Config.StartPoint.y, Config.StartPoint.z - 2.0),
+                    vec3(Config.StartPoint.x, Config.StartPoint.y, Config.StartPoint.z - 2.0),
                     0.0, 0.0, 0.0, -- direction (?)
                     0.0, 0.0, 0.0, -- rotation (90 degrees because the right is really vertical)
                     Config.StartPointSize * 2.0, Config.StartPointSize * 2.0, 4.0, -- scale
