@@ -36,7 +36,7 @@ function tryPushPlayerToLobby(playerId)
     local hasItem = true
     if Config.FeeItem and Config.FeeItem ~= '' then
         if not Framework.hasItem(playerId, Config.FeeItem, 1) then
-            TriggerClientEvent('squid-game-level1:notifyNotEnoughItem', playerId)
+            TriggerClientEvent(EVENTS['notifyNotEnoughItem'], playerId)
             hasItem = false
         end
     end
