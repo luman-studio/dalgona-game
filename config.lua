@@ -511,6 +511,10 @@ Config.ManualMode = {
 -- For example Config.MinigameComplexityCheck = 0.0070
 Config.MinigameComplexityCheck = 0.0035
 
+-- Experimental:
+Config.FeeItem = '' -- 'item_level2_access' -- Player should have the item
+Config.RewardItem = '' -- 'item_next_game_access' -- Player receives the item when win the game
+
 -------------------------
 -- Uncomment for tests --
 -------------------------

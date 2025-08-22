@@ -14,4 +14,6 @@ Locales['en'] = {
     ['player_already_joined'] = 'You have already joined the lobby',
     ['minigame_in_cooldown'] = 'Wait a bit before starting a new game',
     ['game_waiting'] = '~y~GAME STARTS IN ~w~%s~y~ SECONDS\nReward Pool: ~g~$~w~%s',
+    ['not_enaugh_money_and_item'] = 'You don\'t have enaugh money ($%s) and "Access Card" for playing this game',
+    ['no_required_item'] = 'You don\'t have "Access Card" for playing this game',
 }

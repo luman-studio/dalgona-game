@@ -14,6 +14,7 @@ local startPoint = {
 local insideDrawMarkerPoint = false
 local isGameAlreadyStarted = false
 local isEnoughMoney = true
+local isEnoughItem = true
 
 RegisterNetEvent(EVENTS['timeLeftBeforeGameStarts'], function(v)
     timeLeftBeforeGameStarts = v
@@ -24,6 +25,7 @@ RegisterNetEvent(EVENTS['refreshGameInfo'], function(v)
     totalReward = v.totalReward
     isGameAlreadyStarted = false
     isEnoughMoney = true
+    isEnoughItem = true
 end)
 
 local function createStartPoint()
@@ -59,7 +61,8 @@ local function createStartPoint()
         timeLeftBeforeGameStarts = 0
         isGameAlreadyStarted = false
         isEnoughMoney = true
-
+        isEnoughItem = true
+        
         if not gameStarted and insideStartPoint then
             TriggerServerEvent(EVENTS['joinLobby'])
         end
@@ -82,8 +85,12 @@ local function createStartPoint()
 
                     if isGameAlreadyStarted then
                         gameInfoText = _U("game_already_started")
+                    elseif not isEnoughMoney and not isEnoughItem then
+                        gameInfoText = _U("not_enaugh_money_and_item", Config.Fee)
                     elseif not isEnoughMoney then
                         gameInfoText = _U("not_enaugh_money", Config.Fee)
+                    elseif not isEnoughItem then
+                        gameInfoText = _U("no_required_item")
                     else
                         gameInfoText = _U("game_waiting", seconds, totalReward)
                     end
@@ -174,4 +181,9 @@ end)
 RegisterNetEvent(EVENTS['notifyNotEnoughMoney'], function()
     Framework.showNotification(_U("not_enaugh_money", Config.Fee))
     isEnoughMoney = false
+end)
+
+RegisterNetEvent(EVENTS['notifyNotEnoughItem'], function()
+    Framework.showNotification(_U('no_required_item'))
+    isEnoughItem = false
 end)

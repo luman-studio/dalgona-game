@@ -162,6 +162,11 @@ function stopGame()
             totalReward = totalReward - rewardPerPlayer
         end
 
+        -- Give reward item if configured
+        if Config.RewardItem and Config.RewardItem ~= '' then
+            Framework.giveItem(playerId, Config.RewardItem, 1)
+        end
+
         -- Reset player
         resetPlayer(playerId, succeed)
     end

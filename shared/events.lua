@@ -18,6 +18,7 @@ EVENTS = {
     ['quitLobby'] = 'dalgona-game:quitLobby',
     ['notifyGameAlreadyStarted'] = 'dalgona-game:notifyGameAlreadyStarted',
     ['notifyNotEnoughMoney'] = 'dalgona-game:notifyNotEnoughMoney',
+    ['notifyNotEnoughItem'] = 'dalgona-game:notifyNotEnoughItem',
 
     ['gameOver'] = 'dalgona-game:gameOver',
 

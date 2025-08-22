@@ -23,12 +23,38 @@ function tryPushPlayerToLobby(playerId)
         return false
     end
 
-    if not Framework.hasMoney(playerId, Config.Fee) then
-        TriggerClientEvent(EVENTS['notifyNotEnoughMoney'], playerId)
+    -- Check money
+    local hasMoney = true
+    if Config.Fee and Config.Fee > 0 then
+        if not Framework.hasMoney(playerId, Config.Fee) then
+            TriggerClientEvent(EVENTS['notifyNotEnoughMoney'], playerId)
+            hasMoney = false
+        end
+    end
+
+    -- Check item
+    local hasItem = true
+    if Config.FeeItem and Config.FeeItem ~= '' then
+        if not Framework.hasItem(playerId, Config.FeeItem, 1) then
+            TriggerClientEvent('squid-game-level1:notifyNotEnoughItem', playerId)
+            hasItem = false
+        end
+    end
+
+    if not hasMoney or not hasItem then
         return false
     end
-    Framework.takeMoney(playerId, Config.Fee)
-    totalReward = totalReward + Config.Fee
+
+    -- Take money
+    if Config.Fee and Config.Fee > 0 then
+        Framework.takeMoney(playerId, Config.Fee)
+        totalReward = totalReward + Config.Fee
+    end
+
+    -- Take item
+    if Config.FeeItem and Config.FeeItem ~= '' then
+        Framework.takeItem(playerId, Config.FeeItem, 1)
+    end
     
 
     for playerId,v in pairs(joinedPlayers) do
@@ -74,8 +100,15 @@ function tryQuitPlayerFromLobby(playerId)
     end
 
     joinedPlayers[tostring(playerId)] = nil
-    Framework.giveMoney(playerId, Config.Fee)
-    totalReward = totalReward - Config.Fee
+
+    if Config.Fee and Config.Fee > 0 then
+        Framework.giveMoney(playerId, Config.Fee)
+        totalReward = totalReward - Config.Fee
+    end
+
+    if Config.FeeItem and Config.FeeItem ~= '' then
+        Framework.giveItem(playerId, Config.FeeItem, 1)
+    end
 
     Framework.showNotification(playerId, _U("you_left_game"))
     refreshGameInfo()
