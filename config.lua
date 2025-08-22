@@ -3,7 +3,8 @@ Config.Locale = "en" -- Language "en"
 Config.GameName = "Dalgona Game"
 
 Config.MinimumParticipants = 1 -- How much players the game requires for start
-Config.Fee = 0 -- How much money cost to participate in game
+Config.Fee = 10000 -- How much money cost to participate in game
+Config.AccumulativeReward = true -- Keep unused reward from previous games
 Config.StartPoint = vec3(2080.37, 3342.61, 46.86) -- Lobby point
 Config.StartPointSize = 7.5 -- radius
 Config.StartPointColor = {238, 169, 184, 125} -- red, green, blue, alpha

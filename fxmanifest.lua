@@ -1,7 +1,7 @@
 fx_version 'cerulean'
 games { 'gta5' }
 author 'Luman Studio'
-version '1.1.2'
+version '1.1.3'
 lua54 'yes'
 this_is_a_map 'yes'
 
@@ -81,6 +81,6 @@ file 'stream/props/dalgona_candies.ytyp'
 data_file 'DLC_ITYP_REQUEST' 'stream/props/dalgona_candies.ytyp'
 
 escrow_ignore {
-    "**/*",
-     "*"
+    '**/*',
+    '*',
 }

@@ -85,7 +85,7 @@ local function createStartPoint()
                     elseif not isEnoughMoney then
                         gameInfoText = _U("not_enaugh_money", Config.Fee)
                     else
-                        gameInfoText = _U("game_waiting", seconds, Config.Fee)
+                        gameInfoText = _U("game_waiting", seconds, totalReward)
                     end
                 end
     

@@ -1,6 +1,11 @@
 debugPrint('Game Init')
 
-totalReward = 0
+if Config.AccumulativeReward then
+    totalReward = math.max(GetResourceKvpInt('totalReward') or 0, 0)
+else
+    totalReward = 0
+end
+
 gameStarted = false
 joinedPlayers = {}
 allParticipants = {}
@@ -154,6 +159,7 @@ function stopGame()
         -- Give reward
         if succeed then
             giveRewardToPlayer(playerId, rewardPerPlayer)
+            totalReward = totalReward - rewardPerPlayer
         end
 
         -- Reset player
@@ -165,7 +171,13 @@ function stopGame()
     -- Erase all participants when the game stopped
     allParticipants = {}
 
-    totalReward = 0
+    -- Keep reward for next game / reset reward
+    if Config.AccumulativeReward then
+        SetResourceKvpInt('totalReward', totalReward)
+    else
+        totalReward = 0
+    end
+
     gameStarted = false
 
     TriggerEvent(EVENTS['gameOver'])
